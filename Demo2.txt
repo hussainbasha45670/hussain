@@ -1,1 +1,70 @@
 This is a Demo of Git.
+:\Users\SBASHA12>mkdir Test4
+A subdirectory or file Test4 already exists.
+
+C:\Users\SBASHA12>cd Test4
+
+C:\Users\SBASHA12\Test4>add Demo1.txt
+'add' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\SBASHA12\Test4>git add Demo1.txt
+
+C:\Users\SBASHA12\Test4>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Demo1.txt
+        new file:   Demo2.txt
+
+
+C:\Users\SBASHA12\Test4>git commit -m"Commiting a text file"
+[master (root-commit) 8a3c505] Commiting a text file
+ Committer: Basha <shaik-hussain.b.basha@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2 insertions(+)
+ create mode 100644 Demo1.txt
+ create mode 100644 Demo2.txt
+
+C:\Users\SBASHA12\Test4>git branch -M branch1
+
+C:\Users\SBASHA12\Test4>git remote add origin https://github.com/hussainbasha45670/hussain
+
+C:\Users\SBASHA12\Test4>git push -u origin branch1
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 255 bytes | 255.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/hussainbasha45670/hussain
+ * [new branch]      branch1 -> branch1
+branch 'branch1' set up to track 'origin/branch1'.
+
+C:\Users\SBASHA12\Test4>git pull https://github.com/hussainbasha45670/hussain
+From https://github.com/hussainbasha45670/hussain
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\SBASHA12\Test4>git init
+Reinitialized existing Git repository in C:/Users/SBASHA12/Test4/.git/
+
+C:\Users\SBASHA12\Test4>
+
+
+
+
